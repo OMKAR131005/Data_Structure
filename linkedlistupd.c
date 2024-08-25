@@ -44,7 +44,7 @@ int main(){
         current = current -> next;
     }
    
-    print("\n")
+    printf("\n");
     //UPDATE
     printf("Updation and printing of linkedlist\n");
     int fData, newData;
