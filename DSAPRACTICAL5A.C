@@ -6,7 +6,7 @@ struct node {
     struct node *next;
 };
 
-struct node *Top = NULL;  // Initialize Top to NULL
+struct node *Top = NULL;  
 
 void push(int x) {
     struct node *new;
@@ -18,7 +18,7 @@ void push(int x) {
     }
     new->data = x;
     new->next = Top;
-    Top = new;  // Now the new node is at the top of the stack
+    Top = new; 
 }
 
 void pop() {
@@ -27,7 +27,7 @@ void pop() {
         printf("Stack Underflow\n");
     } else {
         t = Top;
-        Top = Top->next;  // Move Top to the next node
+        Top = Top->next;
         free(t);
         t = NULL;
     }
@@ -52,7 +52,7 @@ int main() {
 
     do {
         printf("\nChoose the operation: \n 1) Push \n 2) Pop \n 3) Display \n 4) Exit \n");
-        scanf("%d", &choose);  // Correctly scan input
+        scanf("%d", &choose); 
 
         switch (choose) {
         case 1:
