@@ -2,7 +2,6 @@
 
 int stack[100], top, n, x;
 
-// Code for PUSH :-
 void push()
 {
     if (top >= n - 1)
@@ -18,7 +17,6 @@ void push()
     }
 }
 
-// Code for POP :-
 void pop()
 {
     if (top <= -1)
