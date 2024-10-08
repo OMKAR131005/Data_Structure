@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Stack implementation using array
+
 int stack[100], top, n, x;
 
 // Code for PUSH :-
@@ -32,7 +32,6 @@ void pop()
     }
 }
 
-// Code for printing the element in stack :-
 void print()
 {
     if (top >= 0)
